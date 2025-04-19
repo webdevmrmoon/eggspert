@@ -481,12 +481,12 @@ p {
 
 /* Header */
 .page_topline {
-    background: #212121;
+    background: #f05624;
 }
 .headerSection {
     position: absolute;
     z-index: 3;
-    top: 0;
+    top: 36px;
     left: 0px;
     right: 0px;
     transition: 0.4s ease-in-out;
@@ -496,14 +496,14 @@ p {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 0px 10px;
-    box-shadow: 0px 0px 10px #30303026;
+    box-shadow: none;
 }
 .headerSection::after {
     position: absolute;
     content: '';
     width: var(--logowidth);
     height: 100%;
-    background: #fff;
+    background: transparent;
     left: 0px;
     top: 0px;
     bottom: 0px;
@@ -517,6 +517,7 @@ p {
     left: 0px;
     top: 0px;
     bottom: 0px;
+    display: none;
 }
 .headerSection.scroll-up {
     position: fixed;
@@ -575,7 +576,7 @@ p {
     transition: 0.4s ease-in-out;
     position: relative;
     z-index: 2;
-    background: #fff;
+    background: transparent;
 }
 .logoSection::before {
     content: '';
@@ -586,7 +587,7 @@ p {
     height: 0;
     border-style: solid;
     border-width: 0px 50px 111px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent transparent transparent transparent;
     z-index: 1;
     transition: 0.5s ease-in-out;
     transform: scaleX(-1);
@@ -620,7 +621,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding-left: 8%;
+    padding-left: 0;
 }
 
 .navWrapper ul {
@@ -638,7 +639,7 @@ p {
     padding: 23px 0px;
     display: inline-block;
     position: relative;
-    color: #ffffff;
+    color: #525252;
     transition: 0.3s ease-in-out;
 }
 
@@ -692,7 +693,7 @@ p {
 
 .navWrapper {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex: auto;
 }
 .page_social_icons {
@@ -701,7 +702,7 @@ p {
     gap: 7px;
 }
 .topheadWrap {
-    padding: 4px 0px 4px 8%;
+    padding: 4px 0px 4px 4px;
 }
 a.social-icon {
     display: inline-block;
@@ -858,7 +859,7 @@ a.topheademlbtn {
     height: 100%;
     content: '';
     position: absolute;
-    background: radial-gradient(#00000033, #111111b0);
+    background: radial-gradient(#ffffff33, #ffffffb0);
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -933,7 +934,7 @@ a.topheademlbtn {
     transition-delay: 0.2s;
     font-size: 86px;
     margin-bottom: 28px;
-    color: #fff;
+    color: #f05624;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -945,7 +946,7 @@ a.topheademlbtn {
     transition-delay: 0.4s;
     font-size: 22px;
     opacity: 0.9;
-    color: #fff;
+    color: #383838;
     margin-bottom: 40px;
     line-height: 40px;
 }
@@ -986,6 +987,7 @@ a.topheademlbtn {
     pointer-events: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 30;
+    opacity: 0.3;
 }
 
 .slider-container .nav-btn img {
@@ -2760,6 +2762,21 @@ ul.footerSocial i {
 .whychooseWrap {
     margin-top: 50px;
 }
+
+.whyChooseimg.videplay {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0px;
+}
+.videplay video {
+    width: 100%;
+}
 .whyChooseCard {
     display: flex
 ;
@@ -2986,7 +3003,7 @@ figure.image {
 .rs-team.style1 .team-wrap {
     position: relative;
     transition: all 0.3s ease;
-    border-top: 1px solid #fa3231;
+    border-top: none;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -2997,10 +3014,10 @@ figure.image {
     margin: 0px auto;
     position: relative;
     z-index: 2;
-    bottom: -22px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 4px #00000026;
-    max-height: 300px;
+    bottom: 10px;
+    border-radius: 0;
+    box-shadow: none;
+    max-height: none;
 }
 .rs-team.style1 .team-wrap .image-wrap img {
     width: 100%;
@@ -3010,13 +3027,13 @@ figure.image {
 .rs-team.style1 .team-wrap .team-content {
     text-align: center;
     margin: 0;
-    padding: 10px;
-    background: linear-gradient(45deg, #f05624, #b62126);
+    padding: 16px 16px 26px 16px;
+    background: linear-gradient(0deg, #ffefe9, transparent);
     position: unset;
     opacity: 1;
     position: relative;
     z-index: 1;
-    padding-top: 35px;
+    padding-top: 15px;
     border-radius: 20px;
 }
 .rs-team.style1 .team-wrap .team-content .team-name {
@@ -3025,16 +3042,20 @@ figure.image {
     line-height: 22px;
     margin-bottom: 0px;
     text-transform: capitalize;
+    color: #f05624;
 }
 .rs-team.style1 .team-wrap .team-content .team-name a {
-    color: #ffffff;
+    color: #f05624;
+    font-size: 23px;
 }
 .rs-team.style1 .team-wrap .team-content .team-title {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 26px;
-    color: #C5C2C2;
-    text-transform: uppercase;
+    color: #979797;
+    text-transform: capitalize;
+    margin-top: 4px;
+    display: inline-block;
 }
 .rs-team.style1 .team-wrap .image-wrap .social-icons {
     position: absolute;
@@ -3078,6 +3099,10 @@ figure.image {
     border-radius: 50%;
     margin: 0;
 }
+.teamWrapper {
+    margin-top: 50px;
+}
+
 /* Teams Section end */
 
 .titleSection.new h5 {

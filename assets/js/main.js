@@ -516,7 +516,7 @@ $(function () {
       $('.bnrshapethree').css('transform', `translate(${moveinX}px, ${moveinY}px)`);
       $('.bnrshapefour').css('transform', `translate(${moveinX}px, ${moveinY}px)`);
       $('.bnrshapefive').css('transform', `translate(${moveinX}px, ${moveinY}px)`);
-      $('.slideRightImg').css('transform', `translate(${moveinX}px, ${moveinY}px)`);
+      // $('.slideRightImg').css('transform', `translate(${moveinX}px, ${moveinY}px)`);
   });
 
 })
