@@ -1832,7 +1832,7 @@ a.topheademlbtn {
     margin-top: 20px;
 }
 .footer-wrp-main {
-    background-image: linear-gradient(180deg, #521704eb, #521704eb), url(../img/footer-bg.jpg);
+    background-image: linear-gradient(180deg, #ffe9e3c4, #ffe6ded6), url(../img/footer-bg.jpg);
     background-size: 100%;
     position: relative;
     padding-top: 90px;
@@ -1922,7 +1922,7 @@ a.topheademlbtn {
 
 .ftr-link-bx a {
     display: block;
-    color: #a9a9a9;
+    color: #606060;
     margin: 5px 0px 10px;
     font-size: 15px;
 }
@@ -1946,7 +1946,7 @@ ul.address-sec li a {
 .ftr-link-bx a.title-16 {
     font-size: 22px;
     font-weight: 500;
-    color: #bfbfbf;
+    color: #f05624;
     margin-top: 0px;
     margin-bottom: 24px;
     position: relative;
@@ -1958,7 +1958,7 @@ ul.address-sec li a {
     content: '';
     width: 92px;
     height: 2px;
-    background: #ffffff;
+    background: #877171;
     bottom: 0px;
     left: 0px;
     z-index: 1;
@@ -1968,7 +1968,7 @@ ul.address-sec li a {
     content: '';
     width: 7px;
     height: 7px;
-    background: #ffffff;
+    background: #f05624;
     bottom: -2px;
     left: 87px;
     border-radius: 100%;
@@ -2163,7 +2163,7 @@ ul.footerSocial i {
 }
 
 
-/* Efecto de fade en la animaciÃ³n de cargando */
+/* Efecto de fade en la animaciÃƒÂ³n de cargando */
 .loaded.loader {
   opacity: 0;
   transition: 0.3s ease-out;
@@ -3818,6 +3818,8 @@ figure.image {
 .mediaGalleryImgCard img{
     width: 100%;
     border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 .galleryTitle{
     text-align: center;
@@ -4330,11 +4332,62 @@ figure.image {
 
 
 @media screen and (max-width:1660px) and (min-width:1300px) {
+    .slider-container .slide-title {
+        font-size: 56px;
+    }
+    .slider-container .slide-description {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    .aboutCt {
+        padding: 40px 40px 40px 40px;
+    }
+    .aboutCt .titleSection h2 {
+        font-size: 26px;
+    }
+    .whyfeatCard h6 {
+        font-size: 16px;
+    }
+    .whyFeatures.full .whyfeatCard p {
+        font-size: 14px;
+    }
+    .categoryContent h4 {
+        font-size: 15px;
+    }
+    .categoryContent p {
+        line-height: 20px;
+    }
+    .categoryImg {
+        width: 72%;
+    }
+    .categoryContent {
+        padding-top: 104px;
+        margin-top: -90px;
+    }
+    .testimonial-slide {
+        min-height: 258px;
+    }
+    .ftr-link-bx a {
+        font-size: 14px;
+    }
     .navWrapper ul li a {
         padding: 15px 0px;
     }
     .logoSection::before {
         border-width: 0px 50px 97px 0;
+    }
+    .rs-team.style1 .team-wrap .team-content .team-name a {
+        font-size: 20px;
+    }
+    .testimonial-slide .info-box .text {
+        font-size: 15px;
+    }
+    .rating-list {
+        margin-bottom: 6px;
+    }
+    .categoryContent span {
+        font-size: 13px;
     }
 }
 @media screen and (max-width:1299px) and (min-width:1024px) {
@@ -4343,9 +4396,59 @@ figure.image {
     }
     .titleSection p {
         padding: 0px 20%;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
     }
     .contactForm {
         padding: 40px;
+    }
+    .slider-container .slide-title {
+        font-size: 46px;
+        margin-bottom: 18px;
+    }
+    .slider-container .slider {
+        height: 70vh;
+    }
+    .aboutCt {
+        padding: 35px;
+    } 
+    .slider-container .slide-description {
+        margin-bottom: 20px;
+        line-height: 27px;
+        font-size: 16px;
+    }
+    .aboutCt .titleSection h2 {
+        font-size: 23px;
+    }
+    .whyFeatures.full .whyfeatCard {
+        width: 100%;
+    }
+    .whyfeatCard h6 {
+        font-size: 17px;
+    }
+    .rs-team.style1 .team-wrap .team-content .team-name a {
+        font-size: 18px;
+    }
+    .testimonial-slide .content-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+    .rating-list {
+        justify-content: center;
+    }
+    .testimonial-slide {
+        min-height: 400px;
+    }
+    .headerSection.scroll-down .logoSection {
+        width: 155px;
+    }
+    .navWrapper ul {
+        gap: 25px;
+    }
+    .navWrapper ul li a {
+        font-size: 15px;
     }
 }
 

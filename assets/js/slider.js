@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Config - just like Owl Carousel!
     const config = {
-        autoplay: false,
+        autoplay: true,
         autoplayDelay: 5000, // in milliseconds
     };
 
