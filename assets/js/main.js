@@ -529,3 +529,18 @@ $(function () {
   });
 
 })
+
+$(document).ready(function () {
+  $(".propermodeBtn").click(function () {
+    const $btn = $(this);
+    const $block = $btn.closest(".readmoreBlock");
+    const $details = $block.find(".propermodeDetails");
+
+    $details.slideToggle();
+
+    const isExpanded = $btn.attr("data-state") === "expanded";
+    $btn
+      .attr("data-state", isExpanded ? "collapsed" : "expanded")
+      .text(isExpanded ? "Read More" : "Read Less");
+  });
+});
