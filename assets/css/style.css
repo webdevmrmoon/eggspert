@@ -3628,10 +3628,28 @@ figure.image {
 
 .mapSection  {
     padding-bottom: 290px;
+    position: relative;
+}
+.mapSection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffefe9, transparent), url(../img/bg/mapbg.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+    z-index: 1;
 }
 .mapWrapper {
-    width: 100%;
+    width: 70%;
     height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    margin-right: 0px;
 }
 .mapWrapper img {
     width: 100%;
@@ -4382,6 +4400,7 @@ figure.image {
     justify-content: center;
     left: 17%;
     background: url(../img/other/footer-bg-element.png) 0% 0% / contain;
+    z-index: 3;
 }
 .footerLogoImg img {
     width: 100px;
@@ -4475,6 +4494,25 @@ figure.image {
     width: 240px;
 }
 
+.footerQR {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    margin-top: 30px;
+}
+.footerQR img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    padding: 6px;
+    background: #fff;
+}
+.qrBox h5 {
+        font-size: 16px;
+    text-align: center;
+    margin-top: 9px;
+    color: #ffff;
+}
 
 
 /* Responsive */
