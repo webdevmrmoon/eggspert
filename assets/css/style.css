@@ -3644,7 +3644,7 @@ figure.image {
     z-index: 1;
 }
 .mapWrapper {
-    width: 70%;
+    width: 100%;
     height: 100%;
     margin: auto;
     position: relative;
@@ -4591,6 +4591,28 @@ figure.image {
     }
     .textbtn {
         font-size: 14px;
+    }
+    .navWrapper ul li a {
+        font-size: 15px;
+    }
+    .navWrapper ul {
+        gap: 48px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .rs-team.style1 .team-wrap .team-content {
+        min-height: 146px;
+    }
+    .headerSection.scroll-down .logoSection {
+        width: 145px;
+    }
+    .headerSection.scroll-up .logoSection {
+        width: 145px;
+    }
+    .button {
+        padding: 7px 13px;
     }
 }
 @media screen and (max-width:1299px) and (min-width:1024px) {

@@ -66,8 +66,8 @@
                             <div class="col-sm-4 col-md-6 col-lg-6">
                                 <div class="page_social_icons">
                                     <a class="social-icon fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/people/WeareEggspert/61560568774673/" title="Eggspert Facebook"></a>
-                                    <a class="social-icon fa-brands fa-x-twitter" target="_blank" href="#" title="Twitter"></a>
-                                    <a class="social-icon fa-brands fa-linkedin-in" target="_blank" href="https://www.linkedin.com/company/eggspert-hatchyourhunger/" title="Eggspert LinkedIn"></a>
+                                    <!-- <a class="social-icon fa-brands fa-x-twitter" target="_blank" href="#" title="Twitter"></a> -->
+                                    <!-- <a class="social-icon fa-brands fa-linkedin-in" target="_blank" href="https://www.linkedin.com/company/eggspert-hatchyourhunger/" title="Eggspert LinkedIn"></a> -->
                                     <a class="social-icon fa-brands fa-instagram" target="_blank" href="https://www.instagram.com/weareeggspert" title="Eggspert Instagram"></a>
                                 </div>
                             </div>
@@ -84,11 +84,11 @@
                         <div class="navSection">
                             <div class="navWrapper">
                                 <ul>
-                                    <li><a class="navibtn active" href="javascript:void(0)">Home</a></li>
-                                    <li><a class="navibtn" href="javascript:void(0)">About Us</a></li>
-                                    <li><a class="navibtn" href="javascript:void(0)">Founders</a></li>
-                                    <li><a class="navibtn" href="javascript:void(0)">Menu</a></li>
-                                    <li><a class="navibtn" href="javascript:void(0)">Locations</a></li>
+                                    <li><a class="navibtn active" data-target="#" href="javascript:void(0)">Home</a></li>
+                                    <li><a class="navibtn" data-target="#aboutus" href="javascript:void(0)">About Us</a></li>
+                                    <li><a class="navibtn" data-target="#menus" href="javascript:void(0)">Menu</a></li>
+                                    <li><a class="navibtn" data-target="#founders" href="javascript:void(0)">Founders</a></li>
+                                    <li><a class="navibtn" data-target="#maps" href="javascript:void(0)">Locations</a></li>
                                 </ul>
                             </div>
                             <div class="headerBtns">
@@ -96,7 +96,7 @@
                                    
                                     <li>
                                         <div class="heademail">
-                                            <a class="ctabtn button" href="javascript:void(0)"><img src="assets/img/icons/call-icon.svg" alt="ico" width="24"> Contact Us</a>  
+                                            <a class="ctabtn button navibtn"  data-target="#Contact" href="javascript:void(0)"><img src="assets/img/icons/call-icon.svg" alt="ico" width="24"> Contact Us</a>  
                                         </div>                                      
                                     </li>
                                 </ul>
@@ -241,7 +241,7 @@
 
      <!--  :: About Us :: -->
 
-     <section class="aboutus pt-80 pb-80 position-relative sectionTop overflow-hidden" >
+     <section class="aboutus pt-80 pb-80 position-relative sectionTop overflow-hidden sectionTop" id="aboutus">
         <!-- <div class="aboutrightImg"><img src="assets/img/other/aboutShape1_1.png" alt="img"></div>
         <div class="aboutleftImg"><img src="assets/img/other/aboutShape1_1.png" alt="img"></div> -->
         <div class="site-width">
@@ -305,7 +305,7 @@
         </div>
     </section>
 
-    <section class="categories bg1 pt-80 pb-80">
+    <section class="categories bg1 pt-80 pb-80 sectionTop" id="menus">
         <div class="site-width">
             <div class="titleSection new wow animate__fadeInUp" data-wow-delay="0.2s">
                 <h2>
@@ -558,7 +558,7 @@
         </div>
     </section>
 
-    <section class="meetheteam pt-80 pb-80">
+    <section class="meetheteam pt-80 pb-80 sectionTop" id="founders">
         <div class="site-width">
             <div class="titleSection new wow animate__fadeInUp" data-wow-delay="0.2s">
                 <h5>Founding Members</h5>
@@ -753,7 +753,7 @@
         </div>
     </section> -->
 
-        <section class="mediaGallery bg2 pt-50 pb-50" id="gallery">
+        <section class="mediaGallery bg2 pt-50 pb-50 sectionTop" id="gallery">
             <div class="site-width">
                 <div class="titleSection new wow animate__fadeInUp" data-wow-delay="0.2s">
                     <h2>
@@ -869,7 +869,7 @@
             </div>
         </section>
 
-        <section class="mapSection pt-50 pb-50" style="background-color: #ffefe9;" >
+        <section class="mapSection pt-50 pb-50 sectionTop"  id="maps" style="background-color: #ffefe9;" >
             <div class="site-width">
                 <div class="mapWrapper">
                     <img src="assets/img/other/map-img.png" alt="Eggspert Locations" title="Eggspert Locations" >
@@ -987,7 +987,7 @@
         </footer> -->
         <!-- Footer End -->
 
-           <section class="footer pt-70 pb-70">
+           <section class="footer pt-70 pb-70 sectionTop" id="Contact">
         <div class="footerLogoImg">
             <a href="index.html"><img src="assets/img/logo-light.png" alt="img"></a>
         </div>
@@ -999,7 +999,7 @@
                 <div class="footerContacts">
                     <ul>
                         <li><i class="fa-solid fa-phone"></i><a href="tel:+911234567890">+91 1234567890</a></li>
-                        <li><i class="fa-solid fa-globe"></i><a href="www.eggspert.com" target="_blank">www.eggspert.com</a>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:hr@eggspert.net">hr@eggspert.net</a>
                         </li>
                         <!-- <li><i class="fa-solid fa-location-dot"></i><a href="javascript:void(0)">Lorem ipsum sdfbgd sdg bsfg dsafbsbsebnerb sebfb - 1265254</a></li> -->
                     </ul>
@@ -1023,11 +1023,11 @@
             <div class="footerSocials">
                 <div class="site-width">
                     <ul class="socialLinks">
-                        <li><a href="https://www.facebook.com/people/WeareEggspert/61560568774673/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/weareeggspert"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.facebook.com/people/WeareEggspert/61560568774673/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a></li> -->
+                        <li><a href="https://www.instagram.com/weareeggspert" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <!-- <li><a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a></li> -->
+                        <!-- <li><a href="javascript:void(0)"><i class="fa-brands fa-whatsapp"></i></a></li> -->
                     </ul>
                 </div>
             </div>
