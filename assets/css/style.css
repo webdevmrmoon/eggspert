@@ -3630,7 +3630,7 @@ figure.image {
     padding-bottom: 290px;
     position: relative;
 }
-.mapSection::after {
+/* .mapSection::after {
     content: "";
     position: absolute;
     top: 0;
@@ -3642,7 +3642,7 @@ figure.image {
     background-position: center;
     background-blend-mode: color;
     z-index: 1;
-}
+} */
 .mapWrapper {
     width: 100%;
     height: 100%;
