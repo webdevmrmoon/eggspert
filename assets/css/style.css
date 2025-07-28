@@ -5686,6 +5686,11 @@ figure.image {
     .navWrapper ul li a {
         font-size: 16px;
     }
+    .footerQR {
+        gap: 15px;
+        margin-top: 30px;
+        flex-direction: column;
+    }
 }
 
 
