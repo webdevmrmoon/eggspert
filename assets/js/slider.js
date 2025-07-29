@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Config - just like Owl Carousel!
     const config = {
         autoplay: true,
-        autoplayDelay: 5000, // in milliseconds
+        autoplayDelay: 4000, // in milliseconds
     };
 
     // Selectors
@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
         prevBtn.addEventListener('click', prevSlide);
         nextBtn.addEventListener('click', nextSlide);
 
-        slider.addEventListener('mouseenter', stopAutoSlide);
-        slider.addEventListener('mouseleave', startAutoSlide);
+        // slider.addEventListener('mouseenter', stopAutoSlide);
+        // slider.addEventListener('mouseleave', startAutoSlide);
 
         document.addEventListener('keydown', e => {
             if (e.key === 'ArrowLeft') prevSlide();
