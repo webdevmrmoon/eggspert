@@ -312,24 +312,42 @@ $(function(){
   })
   
 
-  $(document).ready(function() {
-    $(window).on('scroll', function() {
-        var windscroll = $(window).scrollTop();
-        if (windscroll >= 100) {
-            $('.sectionTop').each(function() {
-                var sectionID = $(this).attr('id');
-                if ($(this).position().top <= windscroll + 140) {
-                    $('.navWrapper ul li a.active').removeClass('active');
-                    $('.navWrapper ul li a[href="#' + sectionID + '"]').addClass('active');
-                }
-            });
-        } else {
-            $('.navWrapper ul li a.active').removeClass('active');
-            $('.navWrapper ul li a:first').addClass('active');
-        }
-    });
+// $(document).ready(function () {
+//   function updateActiveNav() {
+//     var windscroll = $(window).scrollTop();
+//     var found = false;
 
-});
+//     if (windscroll >= 100) {
+//       $('.sectionTop').each(function () {
+//         var sectionTop = $(this).offset().top;
+//         var sectionID = $(this).attr('id');
+
+//         if (windscroll + 150 >= sectionTop && !found) {
+//           $('.navWrapper ul li a').removeClass('active');
+//           $('.navWrapper ul li a[href="#' + sectionID + '"]').addClass('active');
+//           found = true;
+//         }
+//       });
+
+//       // If no section matched, fallback to first item (Home)
+//       if (!found) {
+//         $('.navWrapper ul li a').removeClass('active');
+//         $('.navWrapper ul li a:first').addClass('active');
+//       }
+//     } else {
+//       // At top of page, always highlight first menu
+//       $('.navWrapper ul li a').removeClass('active');
+//       $('.navWrapper ul li a:first').addClass('active');
+//     }
+//   }
+
+//   // Scroll event trigger
+//   $(window).on('scroll', updateActiveNav);
+
+//   // On page load
+//   updateActiveNav();
+// });
+
 
 
 

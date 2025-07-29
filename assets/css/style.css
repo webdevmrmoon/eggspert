@@ -652,6 +652,12 @@ p {
     padding: 0px 0px;
     color: #111;
 }
+.headerSection.scroll-down .navWrapper ul li a::after {
+    bottom: 0px;
+}
+.headerSection.scroll-up .navWrapper ul li a::after {
+    bottom: 0px;
+}
 .navWrapper ul li a:hover, .navWrapper ul li a.active {
     transform: scale(0.9);
 }
