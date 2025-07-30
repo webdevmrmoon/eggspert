@@ -4549,7 +4549,8 @@ figure.image {
     padding: 0px;
     max-width: 100% px;
     margin: 0px auto;
-    background: #fbf8ea;
+    /* background: #fbf8ea; */
+    background: #fff6f3;
     padding: 36px;
     border-radius: 30px;
     border: none;
@@ -5881,6 +5882,9 @@ textarea.form-control {
     }
     .formSection {
         padding-bottom: 40px;
+    }
+    .slider-container .dots-container {
+        display: none;
     }
 }
 
