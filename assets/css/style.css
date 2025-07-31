@@ -4690,6 +4690,11 @@ textarea.form-control {
     margin-top: 40px;
 }
 
+.team-wrap .readmoreBlock .blankspace {
+    display: block;
+    margin-bottom: 18px;
+}
+
 /* Responsive */
 
 
